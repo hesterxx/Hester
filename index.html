@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>API JOKES!</title>
+    <link rel="shortcut icon" href="hester.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#333" />
+</head>
+<body class="has-background-black">
+    <div class="container">  
+        <div class="notification">  
+            <h1 class="title"><b>Welcome to API JOKES!</b></h1>  
+            <p>  
+                <b>Let's have some fun!</b><br>  
+                Click the button below to fetch a random joke.  
+            </p>  
+        </div>  
+
+        
+        <div class="button-container">
+            <button class="button is-info is-large" id="fetchBtn" onclick="fetchJoke()">Get a Joke</button>
+        </div>
+
+       
+        <div id="jokes"></div>  
+        
+        <button class="show-answer-btn" id="showAnswerBtn" onclick="showAnswer()">Show Answer</button>
+        
+        <div id="answers"></div>  
+    </div>  
+
+
+    <script src="script.js">       
+    </script>
+</body>
+</html>
